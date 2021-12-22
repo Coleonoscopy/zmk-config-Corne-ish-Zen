@@ -45,15 +45,15 @@
                 raise_layer {
                         label = "GAMING";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-// |      |     |     |     |     |     |   |     |     |     |     |     |      |
-//                    |     |     |     |   |     |     |     |
+// |      | TAB |  Q  |  W  |  E  |  R  |   |     |     |     |     |     |      |
+// |      | CTRL|  A  |  S  |  D  |  F  |   |     |     |     |     |     |      |
+// |      | SHFT|  Z  |  X  |  C  |  V  |   |     |     |     |     |     |      |
+//                    |  B  |  T  | SPC |   |     |     |     |
                         bindings = <
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-   &trans &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-                    	&trans &trans &trans   &trans &trans &trans
+   &trans &kp TAB   &kp Q &kp W &kp E  &kp R     &trans &trans &trans &trans &trans &trans
+   &trans &kp LCTRL &kp A &kp S &kp D  &kp F     &trans &trans &trans &trans &trans &trans
+   &trans &kp LSHFT &kp Z &kp X &kp C  &kp V     &trans &trans &trans &trans &trans &trans
+                    	&kp B   &kp T &kp SPACE &trans  &trans &trans
                         >;
                 };
         };
