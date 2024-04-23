@@ -24,7 +24,7 @@
    &trans &kp Q &kp W &kp F &kp P &kp G    &kp J &kp L  &kp U     &kp Y   &kp SEMI &trans
    &trans &kp A &kp R &kp S &kp T &kp D    &kp H &kp N  &kp E     &kp I   &kp O    &trans
    &trans &kp Z &kp X &kp C &kp V &kp B    &kp K &kp M  &kp COMMA &kp DOT &kp FSLH &trans
-                  &kp LCTRL &mo 1 &kp BKSP &kp SPACE    &tog 2    &kp LSHFT
+                  &kp LCTRL &mo 1 &kp BKSP &kp SPACE    &mo 2     &kp LSHFT
                         >;
                 };
                 lower_layer {
@@ -43,17 +43,17 @@
                 };
 
                 raise_layer {
-                        label = "GAMING";
+                        label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |      | TAB |  Q  |  W  |  E  |  R  |   |     |     |     |     |     |      |
-// |      | CTRL|  A  |  S  |  D  |  F  |   |     |     |     |     |     |      |
-// |      | SHFT|  Z  |  X  |  C  |  V  |   |     |     |     |     |     |      |
-//                    |  B  |  T  | SPC |   |     |     |     |
+// |      |     |     |     |     |     |   |     |  7  |  8  |  9  |     |      |
+// |      |     |     |     |     |     |   |     |  4  |  5  |  6  |     |      |
+// |      |     |     |     |     |     |   |  0  |  1  |  2  |  3  |     |      |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
-   &trans &kp TAB   &kp Q &kp W &kp E  &kp R     &trans &trans &trans &trans &trans &trans
-   &trans &kp LCTRL &kp A &kp S &kp D  &kp F     &trans &trans &trans &trans &trans &trans
-   &trans &kp LSHFT &kp Z &kp X &kp C  &kp V     &trans &trans &trans &trans &trans &trans
-                    	&kp B   &kp T &kp SPACE &trans  &trans &trans
+   &trans &trans &trans &trans &trans &trans     &trans &kp 7  &kp 8  &kp 9  &trans &trans
+   &trans &trans &trans &trans &trans &trans     &trans &kp 4  &kp 5  &kp 6  &trans &trans
+   &trans &trans &trans &trans &trans &trans     &kp 0  &kp 1  &kp 2  &kp 3  &trans &trans
+                    	&trans &trans &trans     &trans &trans &trans
                         >;
                 };
         };
