@@ -33,27 +33,54 @@
 // |      |  -  |  =  |  [  |  ]  |  \  |   |     |  UP |     |     |  '  |      |
 // |      |  _  |  +  |  {  |  }  | "|" |   | LFT | DWN | RGT |     |     |      |
 // |      | BT1 | BT2 | BT3 | BT4 | BT5 |   |BTCLR|     |     |     |     |      |
-//                    |     |     | DEL |   | TAB | ENT | GUI |
+//                    | ALT |     | DEL |   | TAB | ENT | GUI |
                         bindings = <
    &trans &kp MINUS &kp EQUAL &kp LBKT &kp RBKT &kp BSLH                      &trans     &trans   &kp UP   &trans    &kp SQT &trans
    &trans &kp UNDER &kp PLUS  &kp LBRC &kp RBRC &kp PIPE                      &trans     &kp LEFT &kp DOWN &kp RIGHT &trans  &trans
    &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4    &bt BT_CLR &trans   &trans   &trans    &trans  &reset
-                          	    &trans       &trans       &kp DEL         &kp TAB    &kp RET  &kp RGUI
+                          	    &kp LALT     &trans       &kp DEL         &kp TAB    &kp RET  &kp RGUI
                         >;
                 };
-
                 raise_layer {
                         label = "NUMBER";
 // -----------------------------------------------------------------------------------------
-// |      |     |     |     |     |     |   |     |  7  |  8  |  9  |     |      |
-// |      |     |     |     |     |     |   |     |  4  |  5  |  6  |     |      |
+// |      |  1  |  2  |  3  |  4  |     |   |     |  7  |  8  |  9  |     |      |
+// |      | A1  | A2  | A3  | A4  |     |   |     |  4  |  5  |  6  |     |      |
 // |      |     |     |     |     |     |   |  0  |  1  |  2  |  3  |     |      |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
-   &trans &trans &trans &trans &trans &trans     &trans &kp N7 &kp N8 &kp N9 &trans &trans
+   &trans &kp N1 &kp N2 &kp N3 &kp N4 &trans     &trans &kp N7 &kp N8 &kp N9 &trans &trans
    &trans &trans &trans &trans &trans &trans     &trans &kp N4 &kp N5 &kp N6 &trans &trans
    &trans &trans &trans &trans &trans &trans     &kp N0 &kp N1 &kp N2 &kp N3 &trans &trans
-                    	&trans &trans &trans     &trans &trans &trans
+                    	&trans &tg 3  &trans     &trans &trans &trans
+                        >;
+                };
+                gaming_layer {
+                        label = "GAMING";
+// -----------------------------------------------------------------------------------------
+// |      | TAB |  Q  |  W  |  E  |  R  |   |     |     |     |     |     |      |
+// |      | CTR |  A  |  S  |  D  |  F  |   |     |     |     |     |     |      |
+// |      | SFT |  Z  |  X  |  C  |  V  |   |     |     |     |     |     |      |
+//                    |     |     | SPC |   |     |     |     |
+                        bindings = <
+   &trans &KP TAB   &KP Q &kp W  &KP E  &KP R         &trans &trans &trans &trans &trans &trans
+   &trans &KP LCTRL &KP A &KP S  &KP D  &KP F         &trans &trans &trans &trans &trans &trans
+   &trans &KP LSHFT &KP Z &KP X  &KP C  &KP V         &trans &trans &trans &trans &trans &trans
+                    	  &mo 4  &trans &kp SPACE     &trans &trans &trans
+                        >;
+                };
+                switch_layer {
+                        label = "SWITCH";
+// -----------------------------------------------------------------------------------------
+// |      |  1  |  2  |  3  |  4  |     |   |     |  7  |  8  |  9  |     |      |
+// |      | A1  | A2  | A3  | A4  |     |   |     |  4  |  5  |  6  |     |      |
+// |      |     |     |     |     |     |   |  0  |  1  |  2  |  3  |     |      |
+//                    |     |     |     |   |     |     |     |
+                        bindings = <
+   &trans &kp N1      &kp N2      &kp N3      &kp N4      &trans     &trans &trans &trans &trans &trans &trans
+   &trans &mt LALT N1 &mt LALT N2 &mt LALT N3 &mt LALT N4 &trans     &trans &trans &trans &trans &trans &trans
+   &trans &trans      &trans      &trans      &trans      &trans     &trans &trans &trans &trans &trans &trans
+                    	          &trans      &trans      &trans     &trans &trans &trans
                         >;
                 };
         };
